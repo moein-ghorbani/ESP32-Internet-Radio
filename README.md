@@ -1,4 +1,3 @@
-**GitHub README.md (اصلاح شده):**
 ```markdown
 # ESP32 Internet Radio
 
