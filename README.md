@@ -1,3 +1,5 @@
+**GitHub README.md (اصلاح شده):**
+```markdown
 # ESP32 Internet Radio
 
 Professional internet radio player with circular TFT display and web configuration interface.
@@ -7,14 +9,14 @@ Professional internet radio player with circular TFT display and web configurati
 - 📻 Circular 1.28" GC9A01 TFT display
 - 🌐 Web configuration interface
 - 💾 URL persistence in SPIFFS
-- 🔊 I2S audio output
+- 🔊 Built-in DAC analog audio output
 - 📶 WiFi auto-reconnect
 
 ## Hardware Requirements
 - ESP32 Dev Board
 - GC9A01 1.28" 240x240 Circular TFT
-- I2S DAC (MAX98357 or similar)
-- Speakers
+- Speakers with 3.5mm jack
+- No external DAC required (uses built-in ESP32 DAC)
 
 ## Wiring
 | TFT | ESP32 |
@@ -26,11 +28,10 @@ Professional internet radio player with circular TFT display and web configurati
 | RST | GPIO4 |
 | BL  | GPIO15|
 
-| I2S | ESP32 |
-|-----|-------|
-| BCK | GPIO26|
-| LRC | GPIO25|
-| DIN | GPIO22|
+**Audio Output:**
+- Left Channel: GPIO25 (DAC1)
+- Right Channel: GPIO26 (DAC2)
+- Ground: GND
 
 ## Installation
 1. Install required libraries:
@@ -56,5 +57,12 @@ Professional internet radio player with circular TFT display and web configurati
 - 90s Hits: `http://streams.rsa-sachsen.de/90erhits/mp3-192/streams.rsa-sachsen.de`
 - Rock: `http://streams.rsa-sachsen.de/rsa-rock/mp3-192/streams.rsa-sachsen.de`
 
+## Audio Connection
+Connect speakers directly to:
+- GPIO25 → Left channel
+- GPIO26 → Right channel  
+- GND → Ground
+
 ## License
 MIT License
+```
