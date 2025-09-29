@@ -8,8 +8,8 @@
 #include "AudioOutputI2S.h"
 #include <TFT_eSPI.h>
 
-const char* ssid = "SSHP";
-const char* password = "13661368";
+const char* ssid = "**********";
+const char* password = "**********";
 
 TFT_eSPI tft = TFT_eSPI();
 
