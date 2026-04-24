@@ -1,4 +1,3 @@
-```markdown
 # ESP32 Internet Radio
 
 Professional internet radio player with circular TFT display and web configuration interface.
@@ -64,4 +63,3 @@ Connect speakers directly to:
 
 ## License
 MIT License
-```
